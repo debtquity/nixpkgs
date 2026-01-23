@@ -200,7 +200,7 @@ in
   activation-bashless-image = runTest ./activation/bashless-image.nix;
   activation-etc-overlay-immutable = runTest ./activation/etc-overlay-immutable.nix;
   activation-etc-overlay-mutable = runTest ./activation/etc-overlay-mutable.nix;
-  activation-lib = pkgs.callPackage ../modules/system/activation/lib/test.nix { };
+  activation-lib = pkgs.callPackage ../modules/system/activation/lib-test.nix { };
   activation-nix-channel = runTest ./activation/nix-channel.nix;
   activation-nixos-init = runTest ./activation/nixos-init.nix;
   activation-perlless = runTest ./activation/perlless.nix;
@@ -386,6 +386,7 @@ in
   collectd = runTest ./collectd.nix;
   commafeed = runTest ./commafeed.nix;
   connman = runTest ./connman.nix;
+  console-xkb-and-i18n = runTest ./console-xkb-and-i18n.nix;
   consul = runTest ./consul.nix;
   consul-template = runTest ./consul-template.nix;
   containers-bridge = runTest ./containers-bridge.nix;
